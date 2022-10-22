@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+header {
+    margin: 1rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 0 2rem;
+    text-align: center;
+    display: block;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: #29a7d9;
+}
+
+header #logo {
+    height: 3.5rem;
+}
+
+header button {
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 1.5rem;
+    font-size: 1.1rem;
+    background: none;
+    transition: .3s;
+}
+
+header button:hover {
+    background-color: #29a7d9;
+    color: white;
+    border: 2px solid #1e91be;
+}
