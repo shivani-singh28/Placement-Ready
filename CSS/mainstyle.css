@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins";
+    background-color: rgb(243, 243, 243);
 }
 
 header {
@@ -27,6 +28,7 @@ header nav ul li a {
     color: black;
     font-size: 1.3rem;
     transition: .3s;
+    text-shadow: 1px 1px 2px gray;
 }
 
 header nav ul li a:hover {
@@ -37,17 +39,83 @@ header #logo {
     height: 3.5rem;
 }
 
-header button {
+.btn {
     height: 2.5rem;
     width: 6rem;
     border-radius: 1.5rem;
     font-size: 1.1rem;
     background: none;
     transition: .3s;
+    background-color: white;
+    box-shadow: 3px 3px 10px gray;
 }
 
-header button:hover {
+.btn:hover {
     background-color: #29a7d9;
     color: white;
-    border: 2px solid #1e91be;
+    border: 3px solid blue;
+}
+
+main {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    margin-top: 5rem;
+    height: 150px;
+    width: 150px;
+}
+
+main .btn {
+    margin-top: 3rem;
+    height: 6rem;
+    width: 25rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+section {
+    margin: 0 auto;
+    width: 80%;
+    height: 80vh;
+}
+
+section #functionalities {
+    width: 25%;
+    box-shadow: 0px 0px 15px gray;
+    background-color: white;
+}
+
+section #functionalities ul {
+    list-style: none;
+    background: none;
+}
+
+section #functionalities ul a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    background: none;
+}
+
+section #functionalities ul a li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    background: none;
+    transition: .4s;
+}
+
+section #functionalities ul a:hover {
+    background-color: #29a7d9;
+    color: white;
+}
+
+section #functionalities ul a li:hover {
+    background-color: #29a7d9;
 }
