@@ -81,13 +81,16 @@ main .btn {
 section {
     margin: 0 auto;
     width: 80%;
-    height: 80vh;
+    /* height: 72vh; */
+    display: flex;
+    justify-content: space-between;
 }
 
 section #functionalities {
     width: 25%;
     box-shadow: 0px 0px 15px gray;
     background-color: white;
+    border-radius: 1rem;
 }
 
 section #functionalities ul {
@@ -118,4 +121,48 @@ section #functionalities ul a:hover {
 
 section #functionalities ul a li:hover {
     background-color: #29a7d9;
+}
+
+section #functionalities ul a.active {
+    background-color: #29a7d9;
+    color: white;
+}
+
+section #functionalities ul a li.active {
+    background-color: #29a7d9;
+}
+
+section .functioanality_section {
+    height: 90%;
+    width: 72%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section .functioanality_section .com-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+section .functioanality_section .com-link .com-div {
+    height: 3rem;
+    width: 10rem;
+    background-color: white;
+    margin: 1.5rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    border: 1px solid black;
+    transition: .4s;
+    box-shadow: 4px 4px 15px gray;
+}
+
+section .functioanality_section .com-link .com-div:hover {
+    background-color: #29a7d9;
+    color: white;
+    border: 1px solid blue;
+    box-shadow: 5px 5px 10px gray;
+    transform: scale(1.08);
 }
