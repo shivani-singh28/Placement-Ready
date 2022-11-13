@@ -48,6 +48,9 @@ header #logo {
     transition: .3s;
     background-color: white;
     box-shadow: 3px 3px 10px gray;
+    /* background-image: linear-gradient(340deg, rgb(74, 5, 212) 11.2%, rgb(230, 46, 199) 91.2%); */
+    /* background-image: radial-gradient(circle at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgb(0, 7, 128) 99.8%); */
+    /* background-image: radial-gradient(602px at 2.1% 5.1%, rgb(233, 0, 120) 0%, rgb(0, 0, 0) 90.1%); */
 }
 
 .btn:hover {
