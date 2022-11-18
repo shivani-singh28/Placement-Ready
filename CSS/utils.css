@@ -65,7 +65,16 @@ background: linear-gradient(340deg, rgba(3,4,95,1) 0%, rgba(30,30,201,1) 39%, rg
   float: left;
   width: 300px;
   height: 570px;
-  margin-left: 50px;
+  /* margin-left: 50px; */
+  margin-top: 13px;
+}
+.image6 {
+  /* background-image: linear-gradient(#53404dee, rgb(35, 4, 37)); */
+  /* background-image: url("..//Images/Bckr_img.png"); */
+  float: left;
+  width: 320px;
+  height: 600px;
+  /* margin-left: 50px; */
   margin-top: 13px;
 }
 #image1 {
@@ -94,14 +103,22 @@ background: linear-gradient(340deg, rgba(3,4,95,1) 0%, rgba(30,30,201,1) 39%, rg
   /* margin-left: 25px; */
   margin-top: 13px;
 }
+.image5 {
+  float: left;
+  width: 300px;
+  height: 900px;
+  /* margin-left: 35px; */
+  margin-top: 13px;
+}
 
 .image2 {
   float: right;
   width: 300px;
   height: 540px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-top: 13px;
 }
+
 
 .content {
   background-image: linear-gradient(#9edaedee, rgb(44, 194, 207));
@@ -122,8 +139,11 @@ background: linear-gradient(340deg, rgba(3,4,95,1) 0%, rgba(30,30,201,1) 39%, rg
   align-content: center;
 }
 
+
+
 #plac1 {
   background-image: linear-gradient(#9edaedee, rgb(44, 194, 207));
+
   padding-top: 55px;
   /* margin-top: 140px; */
   color: aliceblue;
@@ -178,4 +198,31 @@ button {
 #content_cplus{
   font-size: 18px;
   color:rgb(6, 45, 131);
+}
+ol{
+  /* list-style: none; */
+  margin-left: 17px;
+  /* counter-reset: li; */
+}
+
+li{
+  font-size: 1.2rem;
+}
+ul{
+  margin-left: 20px;
+}
+
+/* ol li{
+  color: blue;
+} */
+
+/* ul li{
+  color: rgb(10, 74, 10);
+  margin-left: 20px;
+} */
+
+
+.im7{
+  position: absolute;
+  right: 93px;
 }
