@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins";
+    background-color: none;
+}
+
+body {
     background-color: rgb(243, 243, 243);
 }
 
@@ -16,7 +20,6 @@ header {
     position: sticky;
     top: 0px;
     box-shadow: 0 0 10px gray;
-    z-index: 100;
 }
 
 header nav {
@@ -72,114 +75,187 @@ header #logo {
 }
 
 main {
-    width: 100vw;
-    height: 80vh;
+    width: 75vw;
+    margin: 2rem auto;
+    /* border: 2px solid black; */
+}
+
+main h1 {
+    text-align: center;
+    margin: 1rem;
+}
+
+main #img-sec {
+    margin-top: 4rem;
+    width: 100%;
+    height: 60vh;
+    background: url(../Images/maranda-vandergriff-7aakZdIl4vg-unsplash.jpg);
+    background: linear-gradient(rgb(240, 240, 240, 0.3), rgb(240, 240, 240, 0.3)), url(../Images/maranda-vandergriff-7aakZdIl4vg-unsplash.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.5rem;
+    box-shadow: 0px 0px 20px black;
+}
+
+main #img-sec img {
+    background: none;
+    height: 18rem;
+    margin: 0 10rem 0 3rem;
+}
+
+main #img-sec p {
+    background: none;
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 5.5rem;
+    color: rgb(21, 21, 22);
+    text-shadow: 5px 5px 5px rgb(255, 255, 255);
+}
+
+main #content {
+    margin-top: 4rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+main #content p {
+    font-size: 1rem;
+    margin: 1.5rem 0;
+}
+
+main #content p span {
+    text-decoration: underline;
+}
+
+main #content h4 {
+    margin-top: 3rem;
+}
+
+main #content .head {
+    font-weight: bold;
+    margin: 1rem 0 0 0;
+}
+
+main #content ul {
+    margin-left: 2rem;
+}
+
+main #pb {
+    margin-top: 3rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+main #pb p {
+    margin-top: 1.5rem;
+}
+
+main #pb ul {
+    margin-left: 2rem;
+    margin-top: 10px;
+}
+
+main #sec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+main #sec .card {
+    margin: 2rem;
+    width: 25%;
+    height: 15rem;
+    box-shadow: 0px 0px 15px gray;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-main img {
-    margin-top: 5rem;
-    height: 150px;
-    width: 150px;
-}
-
-main .btn {
-    margin-top: 3rem;
-    height: 6rem;
-    width: 25rem;
-    border-radius: 1rem;
-    font-size: 2rem;
-}
-
-section {
-    margin: 0 auto;
-    width: 80%;
-    /* height: 72vh; */
-    display: flex;
-    justify-content: space-between;
-}
-
-section #functionalities {
-    width: 25%;
-    box-shadow: 0px 0px 15px gray;
-    background-color: white;
-    border-radius: 1rem;
-}
-
-section #functionalities ul {
-    list-style: none;
-    background: none;
-}
-
-section #functionalities ul a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.5rem;
-    text-align: center;
-    background: none;
-    transition: .4s;
-}
-
-section #functionalities ul a li {
-    padding: 1.5rem 0;
-    border-bottom: 1px solid gray;
-    width: 100%;
-    background: none;
-    transition: .4s;
-}
-
-section #functionalities ul a:hover {
-    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, .9) 39%, rgba(0, 212, 255, .9) 100%);
-    color: white;
-}
-
-section #functionalities ul a li:hover {
-    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, .9) 39%, rgba(0, 212, 255, .9) 100%);
-}
-
-section #functionalities ul a.active {
-    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, .9) 39%, rgba(0, 212, 255, .9) 100%);
-    color: white;
-}
-
-section #functionalities ul a li.active {
-    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, .9) 39%, rgba(0, 212, 255, .9) 100%);
-}
-
-section .functioanality_section {
-    height: 90%;
-    width: 72%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-section .functioanality_section .com-link {
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
-}
-
-section .functioanality_section .com-link .com-div {
-    height: 3rem;
-    width: 10rem;
-    background-image: linear-gradient(340deg, rgb(212, 5, 208) 11.2%, rgb(230, 74, 46) 91.2%);
-    margin: 1.5rem 1.5rem;
-    display: flex;
-    align-items: center;
-    color: white;
-    justify-content: center;
+    padding: 5rem 0 0 0;
     border-radius: .5rem;
     transition: .4s;
-    box-shadow: 4px 4px 15px gray;
 }
 
-section .functioanality_section .com-link .com-div:hover {
-    background-color: #29a7d9;
+main #sec .card img {
+    height: 17%;
+}
+
+main #sec .card p {
+    margin: 20px 0;
+    font-size: 1.3rem;
+    color: rgb(60, 60, 60);
+    font-weight: bold;
+}
+
+main #sec .card .btn {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
     color: white;
-    box-shadow: 5px 5px 10px gray;
-    transform: scale(1.08);
+    background: linear-gradient(to bottom right, rgb(213, 15, 213), rgb(23, 23, 216));
+    transition: .4s;
+}
+
+main #pb #sec .card a {
+    text-decoration: none;
+}
+
+main #sec .card .btn i {
+    margin-left: 8px;
+}
+
+main #sec .card:hover {
+    transform: scale(1.03);
+}
+
+main #sec .card .btn:hover {
+    background: linear-gradient(to bottom right, rgb(23, 23, 216), rgb(213, 15, 213));
+    border: none;
+    transform: scale(1.05);
+}
+
+main #faqs {
+    margin-top: 3rem;
+    background-color: white;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+main #faqs .ques {
+    margin: 2rem 3rem 0 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid black;
+}
+
+main #faqs .ques ul {
+    margin-left: 1rem;
+}
+
+main #faqs .ques p {
+    margin: 1rem 0;
+}
+
+main #faqs .ques p a {
+    text-decoration: none;
+}
+
+main #faqs .ques:last-child {
+    border: none;
 }
 
 footer {
