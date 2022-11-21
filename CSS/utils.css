@@ -6,6 +6,7 @@
 }
 
 body {
+    width: 100vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -47,7 +48,7 @@ background: linear-gradient(340deg, rgba(3,4,95,1) 0%, rgba(30,30,201,1) 39%, rg
     /* float: left; */
     width: 1450px;
     width: 1380px;
-    height: 500px;
+    /* height: 500px; */
     margin: 40px;
 }
 
