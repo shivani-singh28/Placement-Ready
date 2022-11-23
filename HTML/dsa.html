@@ -17,12 +17,12 @@
         <img src="../Images/icons/android-chrome-192x192.png" alt="" id="logo">
         <nav>
             <ul>
-                <li><a href="./main.html#functionalities">Prepare</a></li>
+                <li><a href="./main_companies.html#functionalities">Prepare</a></li>
                 <li><a href="#">Interview Preparation</a></li>
                 <li><a href="./main_InterviewExp.html#functionalities">Interview Experience</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn" id="logout-btn">Log out</button>
     </header>
     <main>
         <h1>Data Structures and Algorithms (DSA)</h1>
@@ -52,7 +52,7 @@
         <section class="material-2">
             <div class="material-content1">
                 <h3>Sorting</h3>
-                <p>Sorting algorithms are easy to learn but are really important for college semester exams and companies offering package between 3 – 6 LPA would ask direct searching questions in online test/ interviews.</p>
+                <p id="abcd">Sorting algorithms are easy to learn but are really important for college semester exams and companies offering package between 3 – 6 LPA would ask direct searching questions in online test/ interviews.</p>
                 <ul>
                     <li><a href="#"><button class="btn1">Classification of Sorting Algorithms</button></a></li>
                     <li>Bubble Sort – <a href="#"><button class="btn1">C</button></a>|<a href="#"><button class="btn2">C++</button></a>|<a href="#"><button class="btn3">Java</button></a></li>
@@ -149,7 +149,8 @@
             <img src="../Images/dsa_trees.png" alt="">
             <div class="material-content1">
                 <h3>Trees</h3>
-                <p>Trees are one of the most crucial topics in Data Structure which are a little complicated than the other topics in C. Questions from this topic are often asked in college semester examinations as well as Company interviews and online tests which are of a good difficulty level and have more weight age than other questions.</p>
+                <p>Trees are one of the most crucial topics in Data Structure which are a little complicated than the other topics in C. Questions from this topic are often asked in college semester examinations as well as Company interviews and online tests
+                    which are of a good difficulty level and have more weight age than other questions.</p>
                 <ul>
                     <li><a href="#"><button class="btn4">Trees in Data Structure (Introduction)</button></a></li>
                     <li><a href="#"><button class="btn4">Types of Trees in Data Structure</button></a></li>
@@ -178,7 +179,7 @@
                 <h3>Tower of Hanoi</h3>
                 <p>Stack is a topic that consists of easy to grasp concepts which help you score better in the college semester examinations as well as online tests/ interviews conducted by various companies. </p>
                 <ul>
-                    <li>Tower  of  Hanoi:<a href="#"><button class="btn4">Representation, Working and Example.</button></a></li>
+                    <li>Tower of Hanoi:<a href="#"><button class="btn4">Representation, Working and Example.</button></a></li>
                 </ul>
             </div>
         </section>
@@ -186,7 +187,7 @@
     <footer>
         <div id="info">
             <div>
-                <img src="../Images/icons/android-chrome-192x192.png" alt="">
+                <img src="./Images/icons/android-chrome-192x192.png" alt="">
                 <h2>Placement Ready</h2>
             </div>
             <a href="#">&#128279;abc.com</a>
@@ -198,31 +199,31 @@
                     <th>Support</th>
                     <th>Companies</th>
                     <th></th>
-                    <th>Get In Touck</th>
+                    <th>Get In Touch</th>
                 </tr>
                 <tr>
-                    <td><a href="#">Conatct Us</a></td>
+                    <td><a href="./contactus.html" target="_blank">Conatct Us</a></td>
                     <td><a href="#">Accenture</a></td>
                     <td><a href="#">Microsoft</a></td>
-                    <td><a href="#">abc@gmail.com</a></td>
+                    <td><a href="#">lokesh.gla_cs20@gla.ac.in</a></td>
                 </tr>
                 <tr>
                     <td><a href="#">About Us</a></td>
                     <td><a href="#">Cognizant</a></td>
                     <td><a href="#">TCS</a></td>
-                    <td><a href="#">+91 0000000000</a></td>
+                    <td><a href="#">+91 8791937610</a></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">Infosys</a></td>
                     <td><a href="#">Mind Tree</a></td>
-                    <td><a href="#">Text on Us</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">VMware</a></td>
                     <td><a href="#">Oracle</a></td>
-                    <td><a href="#">Whatsapp/Instagram</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -245,15 +246,21 @@
             </table>
             <div id="social">
                 <div>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.linkedin.com/in/lokeshsharma1703/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://github.com/Lokeshsharma1703" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.instagram.com/mr.tomar81/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.facebook.com/mr.tomar81" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://twitter.com/T_o_m_a_r" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        var btn = document.getElementById('logout-btn');
+        btn.addEventListener('click', (e) => {
+            window.location.assign('../index.html');
+        })
+    </script>
 </body>
 
 </html>

@@ -12,7 +12,13 @@ header {
     margin: 1rem 2rem;
     padding: .5rem 5rem;
     display: flex;
-    background-color: rgba(6, 66, 170, 0.5);
+    /* background-color: rgba(6, 66, 170, 0.5); */
+    background: rgba( 1, 21, 142, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 8px);
+    -webkit-backdrop-filter: blur( 8px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     justify-content: space-between;
     align-items: center;
     border-radius: 1rem;
@@ -124,6 +130,7 @@ main #sec12 img {
 main #sec #cont {
     background: none;
 }
+
 main #sec12 #cont {
     background: none;
     margin-top: 3rem;
@@ -132,6 +139,7 @@ main #sec12 #cont {
 main #sec #cont #heading {
     background: none;
 }
+
 main #sec12 #cont #heading {
     background: none;
 }
@@ -155,6 +163,7 @@ main #sec12 #cont #heading h2 {
 main #sec #cont #conten {
     background: none;
 }
+
 main #sec12 #cont #conten {
     background: none;
 }
@@ -164,6 +173,7 @@ main #sec #cont #conten p {
     margin-top: 1.5rem;
     color: white;
 }
+
 main #sec12 #cont #conten p {
     background: none;
     margin-top: 1.5rem;

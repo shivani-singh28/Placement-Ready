@@ -80,8 +80,9 @@ login.addEventListener('click', (e) => {
             last_login: Date.now()
         })
 
-
-        window.location.assign('./HTML/main.html');
+        var login_container = document.getElementById('content-container');
+        login_container.style.left = `2500px`;
+        window.location.assign('./HTML/main_companies.html');
         alert('logged in successfully');
 
 
@@ -97,6 +98,7 @@ login.addEventListener('click', (e) => {
 const user = auth.currentUser;
 onAuthStateChanged(auth, (user) => {
     if (user) {
+        user.perventDefault();
         const uid = user.uid;
     } else {
 
