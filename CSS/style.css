@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Poppins';
@@ -55,7 +55,7 @@ header #logo {
     border: 3px solid blue;
 }
 
-#page{
+#page {
     width: 70vw;
     background-color: white;
     box-shadow: 0px 0px 15px gray;
@@ -63,87 +63,104 @@ header #logo {
     padding: 15px;
     margin: 50px auto;
 }
-#page h2{
+
+#page h2 {
     font-size: 35px;
     padding: 20px 0;
     font-weight: bold;
 }
 
-#page p{
+#page p {
     font-size: 18px;
     padding: 10px 0;
 }
 
-#page h3{
+#page h3 {
     font-size: 25px;
     padding: 10px 0;
+    margin-left: 3rem;
 }
 
-#page table{
+#page table {
     border-collapse: collapse;
     font-size: 20px;
     margin: 10px auto;
     width: 90%;
 }
 
-table th{
+table th {
     text-align: left;
     background-color: #78b7d0;
 }
-table tr:nth-of-type(even){
+
+table tr:nth-of-type(even) {
     background-color: rgb(162, 232, 200);
 }
 
-#page1{
+#page1 {
     width: 70vw;
     background-color: white;
     padding: 15px;
     margin: 50px auto;
 }
-#page1 table{
+
+#page1 table {
     border-collapse: collapse;
     font-size: 20px;
     margin: 10px auto;
     width: 90%;
 }
 
-#syllabus-div{
+#syllabus-div {
     width: 70vw;
     background-color: white;
     box-shadow: 0px 0px 15px gray;
     border-radius: 15px;
     padding: 15px;
     margin: 50px auto;
-    padding: 0;
+    padding: 0 0 2rem 0;
 }
 
-#tab{
+#page li {
+    list-style: none;
+}
+
+#syllabus-div .l1content ul li a {
+    text-decoration: none;
+}
+
+#tab {
     background-color: rgb(167, 243, 243);
     box-sizing: border-box;
 }
-#tab h1{
+
+#tab h1 {
     font-size: 35px;
     padding: 20px 0;
     font-weight: bold;
     text-align: center;
 }
 
-#tab ul{
+#tab ul {
+    padding: 1rem 3rem;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
 }
-#tab ul li{
-    margin: 5px 10px;
+
+#tab ul li .tab-item .div-tab {
+    margin: 10px 10px;
+    padding: 0 10px;
+    width: 17rem;
 }
 
-#syllabus-div h2{
+#syllabus-div h2 {
     font-size: 35px;
     padding: 20px 0;
     font-weight: bold;
 }
 
-#syllabus-div h3{
+#syllabus-div h3 {
     font-size: 25px;
     padding: 10px 0;
 }
@@ -166,8 +183,8 @@ table tr:nth-of-type(even){
     border: 1px solid black;
     transition: .4s;
     box-shadow: 4px 4px 15px gray;
-
 }
+
 .tab-item .div-tab:hover {
     background-color: #29a7d9;
     color: white;
@@ -176,8 +193,9 @@ table tr:nth-of-type(even){
     transform: scale(1.08);
 }
 
-.l1content{
+.l1content {
     margin: 20px;
+    padding: 0 2rem;
 }
 
 .com-link1 {
@@ -188,7 +206,7 @@ table tr:nth-of-type(even){
 
 .com-link1 .com-div1 {
     height: 3rem;
-    width: 15rem;
+    width: 19rem;
     background-color: white;
     margin: 1.5rem 1.5rem;
     display: flex;
@@ -198,7 +216,7 @@ table tr:nth-of-type(even){
     border: 1px solid black;
     transition: .4s;
     box-shadow: 4px 4px 15px gray;
-
+    padding: 0 1rem;
 }
 
 .com-link1 .com-div1:hover {
@@ -209,3 +227,8 @@ table tr:nth-of-type(even){
     transform: scale(1.08);
 }
 
+#CapExp{
+    
+    margin: 250px;
+    height: 200px;
+}
