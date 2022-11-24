@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +8,21 @@
     <title>MindTree</title>
     <link rel="stylesheet" href="..//CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+
 </head>
+
 <body>
     <header>
         <img src="../Images/icons/android-chrome-192x192.png" alt="" id="logo">
         <nav>
             <ul>
-                <li><a href="#">Prepare</a></li>
+                <li><a href="./main_companies.html#functionalities">Prepare</a></li>
                 <li><a href="#">Interview Preparation</a></li>
-                <li><a href="#">Interview Experience</a></li>
+                <li><a href="./main_InterviewExp.html#functionalities">Interview Experience</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn" id="logout-btn">Log out</button>
     </header>
     <div id="page">
         <h1>
@@ -26,7 +30,8 @@
         </h1>
         <h2>MindTree Previous Year Pattern Questions with Solutions</h2>
         <br>
-        <p>MindTree update its test pattern every year and this year again they have updated their test pattern. This page is updated with all the latest information of MindTree Test. You will get MindTree Previous Year Pattern Questions with Solutions here on this page.</p>
+        <p>MindTree update its test pattern every year and this year again they have updated their test pattern. This page is updated with all the latest information of MindTree Test. You will get MindTree Previous Year Pattern Questions with Solutions here
+            on this page.</p>
         <br>
         <h2>MindTree Detailed Information:</h2>
         <ul>
@@ -306,7 +311,7 @@
         <br><br>
         <div id="minlink4" class="l1content" style="diplay: block;">
             <h1>MindTree Computer Programming Overall Curriculum 2023</h1>
-            
+
             <br>
             <p>All the topics that will be asked in MindTree Computer Programming Section are mentioned below here:</p>
             <br>
@@ -375,4 +380,82 @@
             <p><b>Total Questions:</b>2</p>
         </div>
     </div>
+    <footer>
+        <div id="info">
+            <div>
+                <img src="../Images/icons/android-chrome-192x192.png" alt="">
+                <h2>Placement Ready</h2>
+            </div>
+            <p>We help students to prepare for placements with the best study material, Sectional Statistics for better focus and Success stories & tips on Placement Ready.</p>
+        </div>
+        <div id="links">
+            <table>
+                <tr>
+                    <th>Support</th>
+                    <th>Companies</th>
+                    <th></th>
+                    <th>Get In Touch</th>
+                </tr>
+                <tr>
+                    <td><a href="./contactus.html" target="_blank">Conatct Us</a></td>
+                    <td><a href="./Accenture.html">Accenture</a></td>
+                    <td><a href="#">Microsoft</a></td>
+                    <td><a href="#">lokesh.gla_cs20@gla.ac.in</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">About Us</a></td>
+                    <td><a href="./CognizantSyllabus.html">Cognizant</a></td>
+                    <td><a href="./TCS.html">TCS</a></td>
+                    <td><a href="#">+91 8791937610</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="./Infosys.html">Infosys</a></td>
+                    <td><a href="./MindTree.html">Mind Tree</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="./VMwareSyllabus.html">VMware</a></td>
+                    <td><a href="./OracleSyllabus.html">Oracle</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="./CapgeminiSyllabus.html">Capgemini</a></td>
+                    <td><a href="./TcsNinjaSyllabus.html">TCS Ninja</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="./DeloitteSyllabus.html">Deloitte</a></td>
+                    <td><a href="./IBM.html">IBM</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="./WiproSyllabus.html">Wipro</a></td>
+                    <td><a href="#">Amazon</a></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="social">
+                <div>
+                    <a class="butn" href="https://www.linkedin.com/in/lokeshsharma1703/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://github.com/Lokeshsharma1703" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.instagram.com/mr.tomar81/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.facebook.com/mr.tomar81" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://twitter.com/T_o_m_a_r" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var btn = document.getElementById('logout-btn');
+        btn.addEventListener('click', (e) => {
+            window.location.assign('../index.html');
+        })
+    </script>
 </body>
+
+</html>
