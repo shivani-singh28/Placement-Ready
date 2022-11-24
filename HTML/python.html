@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Python</title>
     <link rel="stylesheet" href="../CSS/utils.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.css">
+
 </head>
 
 <body>
@@ -14,43 +17,40 @@
         <img src="../Images/icons/android-chrome-192x192.png" alt="" id="logo" />
         <nav>
             <ul>
-                <li><a href="#">Prepare</a></li>
+                <li><a href="./main_companies.html#functionalities">Prepare</a></li>
                 <li><a href="#">Interview Preparation</a></li>
-                <li><a href="#">Interview Experience</a></li>
+                <li><a href="./main_InterviewExp.html#functionalities">Interview Experience</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn" id="logout-btn">Log out</button>
     </header>
     <center>
         <h1>Python Tutorial</h1>
     </center>
-    <div class="main">
-        <div class="image">
-            <img id="im1" src="../Images/python_logo.png" alt="Image" />;
-        </div>
-        <div class="content">
-            <div class="plac">
-                <h1 id="plac1">Learn Python</h1>
+    <main id="sec">
+        <img src="../Images/python_logo.png" alt="Image">
+        <section id="cont">
+            <div id="heading">
+                <h2>Learn Python</h2>
             </div>
-            <div class="below">
-                <h3 id="below1">
-                    Python is a high-level, object-oriented, structured programming language with complex semantics.The high-level data structures coupled with dynamic typing and dynamic linking render it very appealing for Rapid Application Development and for use as a scripting or glue language to link established components. Here you will get a complete tutorial in Python, with all the topics required.Let’s start our Python tutorial.
-                </h3>
+            <div id="conten">
+                <p>Python is a high-level, object-oriented, structured programming language with complex semantics.The high-level data structures coupled with dynamic typing and dynamic linking render it very appealing for Rapid Application Development.
+                    Here you will get a complete tutorial in Python, with all the topics required.Let’s start our Python tutorial.</p>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
-    
+
     <div class="main2">
         <div>
-            <div class="im7">
-                <img src="../Images/python_intro(1).jpeg" alt="Image" style="height: 250px;"/>;
+            <div class="image2">
+                <img src="../Images/python_intro(1).jpeg" alt="Image" style="height: 250px;" />
             </div>
             <div>
-                <h1 id="basic">Introduction of Python</h1>
+                <h1 id="basic" style="margin-left: 45px;">Introduction of Python</h1>
             </div>
         </div>
-        <div>
+        <div style="margin-left: 45px;">
             <ul>
                 <li><a href="#"><button>What is Python</button></a></li>
                 <li><a href="#"><button>History of Python</button></a></li>
@@ -58,15 +58,233 @@
                 <li><a href="#"><button>Versions of Python</button></a></li>
                 <li><a href="#"><button>Implementation of Python</button></a>
                     <br /> &nbsp; &nbsp;
-                    <a href="#"><button id="bt3"></button></a><br /> &nbsp; &nbsp;
-                    <a href="#"><button id="bt3"></button></a><br /> &nbsp; &nbsp;
-                    <a href="#"><button id="bt3"></button></a><br /> &nbsp; &nbsp;
-                    <a href="#"><button id="bt3"></button></a><br /> &nbsp; &nbsp;
+                    <a href="#"><button id="bt3">What is CPython</button></a><br /> &nbsp; &nbsp;
+                    <a href="#"><button id="bt3">What is JPython</button></a><br /> &nbsp; &nbsp;
+                    <a href="#"><button id="bt3">What is IronPython</button></a><br /> &nbsp; &nbsp;
+                    <a href="#"><button id="bt3">What is PyPy</button></a><br /> &nbsp; &nbsp;
                 </li>
-                
             </ul>
         </div>
     </div>
+
+
+    <div class="main1">
+        <div id="image1">
+            <img src="../Images/python_vs_others.jpeg" alt="Image" style="margin-left: 25px;" />
+        </div>
+        <div>
+            <div>
+                <h1 id="basic">Python vs Other Programming Languages</h1><br>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"><button>Python vs C Programming Language</button></a></li>
+                    <li><a href="#"><button>Python vs C++ Programming Language</button></a></li>
+                    <li><a href="#"><button>Python vs Java</button></a></li>
+                    <li><a href="#"><button>Python vs CPython</button></a></li>
+                    <li><a href="#"><button>Difference between .py .pyc and pycache files</button></a></li>
+                </ul>
+            </div>
+        </div><br><br><br>
+
+        <div class="main2">
+            <div>
+                <div id="image2">
+                    <img src="../Images/python_dataTypes.png" alt="Image" style="height: 250px;" />
+                </div>
+                <div>
+                    <h1 id="basic" style="margin-left: 45px;">Data Types in Python</h1>
+                </div>
+            </div>
+            <div style="margin-left: 45px;">
+                <ul>
+                    <li><a href="#"><button>Data Types in Python</button></a></li>
+                    <li><a href="#"><button id="bt2">Ranges of data types in Python</button></a></li>
+                    <li><a href="#"><button>Built-in functions in Python</button></a></li>
+                    <li><a href="#"><button id="bt2">Operators in Python</button></a></li>
+                    <li><a href="#"><button>Numeric data type in Python</button></a></li>
+                    <li><a href="#"><button id="bt2">Str datatype in Python</button></a></li>
+                    <li><a href="#"><button>Iterator data types in Python</button></a></li>
+                    <li><a href="#"><button id="bt2">Sequence data types in Python</button></a></li>
+                    <li><a href="#"><button>Blocks and Statement in Python</button></a></li>
+                    <li><a href="#"><button id="bt2">Identation in Python</button></a></li>
+                    <!-- <li><a href="#"><button>Comments in Python</button></a></li> -->
+                    <li><a href="#"><button>Bool() in Python</button></a></li>
+                </ul>
+            </div>
+        </div><br><br><br><br><br><br>
+
+
+        <div class="main1">
+            <div id="image1">
+                <img src="../Images/python_slicing.png" alt="Image" />
+            </div>
+            <div>
+                <div>
+                    <h1 id="basic">Slicing in Python</h1><br>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#"><button>Slice() function in Python</button></a></li>
+                        <li><a href="#"><button id="bt2">Slicing in Python</button></a></li>
+                        <li><a href="#"><button>Slicing with Negative Numbers in Python</button></a></li>
+                        <li><a href="#"><button id="bt2">Using Step in a Slicing</button></a></li>
+                        <li><a href="#"><button>String Operators in Python</button></a></li>
+                    </ul>
+                </div>
+            </div><br><br><br>
+
+            <div class="main2">
+                <div>
+                    <div id="image2">
+                        <img src="../Images/python_operator(1).jpeg" alt="Image" style="height: 250px;" />
+                    </div>
+                    <div>
+                        <h1 id="basic">Operators and Methods in Python</h1>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#"><button>Arithmetic Operators in Python</button></a></li>
+                        <li><a href="#"><button id="bt2">Assignment Operators in Python</button></a></li>
+                        <li><a href="#"><button>Comparison Operators in Python</button></a></li>
+                        <li><a href="#"><button id="bt2">Logical Operators in Python</button></a></li>
+                        <li><a href="#"><button>Bitwise Operators in Python</button></a></li>
+                        <li><a href="#"><button id="bt2">Mutable Sequence Types in Python</button></a></li>
+                        <li><a href="#"><button>Immutable Sequence Types in Python</button></a></li>
+                        <!-- <li><a href="#"><button id="bt2">Text Sequence Type</button></a></li> -->
+                        <li><a href="#"><button id="bt2">Methods on Integer Types</button></a></li>
+                        <li><a href="#"><button>Methods on Float Type </button></a></li>
+                        <li><a href="#"><button id="bt2">String methods in Python </button></a></li>
+                        <li><a href="#"><button>Range function in Python </button></a></li>
+                    </ul>
+                </div>
+            </div><br><br><br><br><br><br>
+
+            <div class="main1">
+                <div id="image6">
+                    <img src="../Images/python_decision(1).jpeg" alt="Image" style="height: 250px;" />
+                </div>
+                <div>
+                    <div>
+                        <h1 id="basic">Decision Making in Python</h1><br>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="#"><button>Decision Making in Python</button></a></li>
+                            <li><a href="#"><button id="bt2">if-else Statement in Python</button></a></li>
+                            <li><a href="#"><button>AND, OR and NOT in Python</button></a></li>
+                            <li><a href="#"><button id="bt2">for loops in Python</button></a></li>
+                            <li><a href="#"><button>while loop in Python</button></a></li>
+                            <li><a href="#"><button id="bt2">Python Nested Loops</button></a></li>
+                            <li><a href="#"><button>Python continue and break Statement</button></a></li>
+                            <li><a href="#"><button id="bt2">Python pass Statement</button></a></li>
+                            <li><a href="#"><button>Random Module in Python</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><br><br><br><br><br>
+
+            <div class="main2">
+                <div>
+                    <div id="image2">
+                        <img src="../Images/python_strings.jpeg" alt="Image" style="height: 250px;" />
+                    </div>
+                    <div>
+                        <h1 id="basic">Strings in Python</h1>
+                    </div>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="#"><button>String in Python</button></a></li>
+                        <li><a href="#"><button>Enumerate() in Python</button></a></li>
+                        <li><a href="#"><button>append() in Python</button></a></li>
+                        <li><a href="#"><button>remove() in Python</button></a></li>
+                        <li><a href="#"><button>Sort() in Python</button></a></li>
+                        <li><a href="#"><button>Sorted() in Python</button></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="info">
+            <div>
+                <img src="../Images/icons/android-chrome-192x192.png" alt="">
+                <h2>Placement Ready</h2>
+            </div>
+            <a href="#">&#128279;abc.com</a>
+            <p>We help students to prepare for placements with the best study material, Sectional Statistics for better focus and Success stories & tips on Placement Ready.</p>
+        </div>
+        <div id="links">
+            <table>
+                <tr>
+                    <th>Support</th>
+                    <th>Companies</th>
+                    <th></th>
+                    <th>Get In Touch</th>
+                </tr>
+                <tr>
+                    <td><a href="./contactus.html" target="_blank">Conatct Us</a></td>
+                    <td><a href="#">Accenture</a></td>
+                    <td><a href="#">Microsoft</a></td>
+                    <td><a href="#">lokesh.gla_cs20@gla.ac.in</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">About Us</a></td>
+                    <td><a href="#">Cognizant</a></td>
+                    <td><a href="#">TCS</a></td>
+                    <td><a href="#">+91 8791937610</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Infosys</a></td>
+                    <td><a href="#">Mind Tree</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">VMware</a></td>
+                    <td><a href="#">Oracle</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Capgemini</a></td>
+                    <td><a href="#">TCS Ninja</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Deloitte</a></td>
+                    <td><a href="#">IBM</a></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a href="#">Wipro</a></td>
+                    <td><a href="#">Amazon</a></td>
+                    <td></td>
+                </tr>
+            </table>
+            <div id="social">
+                <div>
+                    <a class="butn" href="https://www.linkedin.com/in/lokeshsharma1703/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://github.com/Lokeshsharma1703" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.instagram.com/mr.tomar81/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.facebook.com/mr.tomar81" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://twitter.com/T_o_m_a_r" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var btn = document.getElementById('logout-btn');
+        btn.addEventListener('click', (e) => {
+            window.location.assign('../index.html');
+        })
+    </script>
 </body>
 
 </html>

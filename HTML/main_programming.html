@@ -25,6 +25,40 @@
             transition: .4s;
             box-shadow: 4px 4px 15px gray;
         }
+        
+        @media (max-width:820px) {
+            section .functioanality_section {
+                height: 90%;
+                width: 72%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            section .functioanality_section .com-link {
+                text-decoration: none;
+                color: black;
+                font-size: .6rem;
+            }
+            section .functioanality_section .com-link .com-div {
+                height: 1.7rem;
+                width: 4rem;
+                text-align: center;
+                background-image: linear-gradient(340deg, rgb(212, 5, 208) 11.2%, rgb(230, 74, 46) 91.2%);
+                margin: 1.5rem 1.5rem;
+                display: flex;
+                align-items: center;
+                color: white;
+                justify-content: center;
+                border-radius: .5rem;
+                transition: .4s;
+                box-shadow: 4px 4px 15px gray;
+            }
+            section .functioanality_section .com-link .com-div:hover {
+                background-color: #29a7d9;
+                color: white;
+                box-shadow: 5px 5px 10px gray;
+                transform: scale(1.08);
+            }
+        }
     </style>
 </head>
 
@@ -33,21 +67,21 @@
         <img src="../Images/icons/android-chrome-192x192.png" alt="" id="logo">
         <nav>
             <ul>
-                <li><a href="./main.html#functionalities">Prepare</a></li>
+                <li><a href="./main_companies.html#functionalities">Prepare</a></li>
                 <li><a href="#">Interview Preparation</a></li>
                 <li><a href="./main_InterviewExp.html#functionalities">Interview Experience</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn" id="logout-btn">Log out</button>
     </header>
     <main>
         <img src="../Images/icons/android-chrome-512x512.png" alt="">
-        <a href="#"><button class="btn">Begin Preparation</button></a>
+        <a href="#functionalities"><button class="btn">Begin Preparation</button></a>
     </main>
     <section>
         <div id="functionalities">
             <ul>
-                <a href="./main.html#functionalities">
+                <a href="./main_companies.html#functionalities">
                     <li>Companies</li>
                 </a>
                 <a href="#functionalities" class="active">
@@ -77,20 +111,14 @@
             <a href="./python.html" class="com-link">
                 <div class="com-div">Learn Python</div>
             </a>
-            <a href="#" class="com-link">
-                <div class="com-div">Learn Java</div>
-            </a>
-            <a href="#" class="com-link">
+            <a href="./dsa.html" class="com-link">
                 <div class="com-div">Learn DSA</div>
             </a>
-            <a href="#" class="com-link">
+            <a href="./dbms.html" class="com-link">
                 <div class="com-div">Learn DBMS</div>
             </a>
-            <a href="#" class="com-link">
+            <a href="./os.html" class="com-link">
                 <div class="com-div">Learn OS</div>
-            </a>
-            <a href="#" class="com-link">
-                <div class="com-div">Software Engineering</div>
             </a>
         </aside>
     </section>
@@ -109,31 +137,31 @@
                     <th>Support</th>
                     <th>Companies</th>
                     <th></th>
-                    <th>Get In Touck</th>
+                    <th>Get In Touch</th>
                 </tr>
                 <tr>
-                    <td><a href="#">Conatct Us</a></td>
+                    <td><a href="./contactus.html" target="_blank">Conatct Us</a></td>
                     <td><a href="#">Accenture</a></td>
                     <td><a href="#">Microsoft</a></td>
-                    <td><a href="#">abc@gmail.com</a></td>
+                    <td><a href="#">lokesh.gla_cs20@gla.ac.in</a></td>
                 </tr>
                 <tr>
                     <td><a href="#">About Us</a></td>
                     <td><a href="#">Cognizant</a></td>
                     <td><a href="#">TCS</a></td>
-                    <td><a href="#">+91 0000000000</a></td>
+                    <td><a href="#">+91 8791937610</a></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">Infosys</a></td>
                     <td><a href="#">Mind Tree</a></td>
-                    <td><a href="#">Text on Us</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">VMware</a></td>
                     <td><a href="#">Oracle</a></td>
-                    <td><a href="#">Whatsapp/Instagram</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -156,15 +184,21 @@
             </table>
             <div id="social">
                 <div>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.linkedin.com/in/lokeshsharma1703/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://github.com/Lokeshsharma1703" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.instagram.com/mr.tomar81/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.facebook.com/mr.tomar81" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://twitter.com/T_o_m_a_r" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        var btn = document.getElementById('logout-btn');
+        btn.addEventListener('click', (e) => {
+            window.location.assign('../index.html');
+        })
+    </script>
 </body>
 
 </html>
