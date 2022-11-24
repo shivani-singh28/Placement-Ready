@@ -43,6 +43,7 @@
 
 #form-inner-con {
     width: 80%;
+    /* position: relative; */
     padding: 1rem;
 }
 
@@ -73,11 +74,15 @@
     margin-top: 5px;
 }
 
+#password {
+    position: relative;
+}
+
 .fa-eye {
-    margin-left: -35px;
     cursor: pointer;
     position: relative;
-    /* bottom: 1rem; */
+    bottom: 3.2rem;
+    left: 88%;
     color: white;
 }
 
@@ -210,13 +215,6 @@
         float: left;
         margin-top: 5px;
     }
-    .fa-eye {
-        margin-left: -35px;
-        cursor: pointer;
-        position: relative;
-        bottom: 3.2rem;
-        color: white;
-    }
     #btn-container button {
         border-radius: 1.5rem;
         width: 45%;
@@ -262,13 +260,6 @@
         border: 2px solid black;
         padding: 1rem;
     }
-    .fa-eye {
-        margin-left: -35px;
-        cursor: pointer;
-        position: relative;
-        bottom: 0px;
-        color: white;
-    }
 }
 
 @media (max-width:902px) {
@@ -296,13 +287,6 @@
         background: linear-gradient(to right bottom, rgb(172, 170, 170), rgb(65, 65, 65));
         border: 2px solid black;
         padding: 1rem;
-    }
-    .fa-eye {
-        margin-left: -35px;
-        cursor: pointer;
-        position: relative;
-        bottom: 3.2rem;
-        color: white;
     }
 }
 
@@ -332,12 +316,5 @@
         background: linear-gradient(to right bottom, rgb(172, 170, 170), rgb(65, 65, 65));
         border: 2px solid black;
         padding: 1rem;
-    }
-    .fa-eye {
-        margin-left: -35px;
-        cursor: pointer;
-        position: relative;
-        bottom: 0rem;
-        color: white;
     }
 }
