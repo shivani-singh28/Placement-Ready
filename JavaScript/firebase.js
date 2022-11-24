@@ -38,12 +38,18 @@ signup.addEventListener('click', (e) => {
         alert('Password is not valid');
         return;
     }
+    // if (validate_fields(fname) == false) {
+    //     alert('First name cannot be empty');
+    //     return;
+    // }
+    // if (validate_fields(lname) == false) {
+    //     alert('Last name cannot be empty');
+    //     return;
+    // }
     if (validate_fields(fname) == false) {
-        alert('First name cannot be empty');
         return;
     }
     if (validate_fields(lname) == false) {
-        alert('Last name cannot be empty');
         return;
     }
 
@@ -119,6 +125,7 @@ logout.addEventListener('click', (e) => {
 });
 
 
+
 function validate_email(email) {
     let expression = /^[^@]+@\w+(\.\w+)+\w$/;
     if (expression.test(email) == true) {
@@ -138,13 +145,22 @@ function validate_password(password) {
 
 function validate_fields(field) {
     if (field == null) {
+        alert('First name cannot be empty');
         return false;
     }
 
     if (field.length <= 0) {
+        alert('First name cannot be empty');
         return false;
     } else {
-        return true;
+        // return true;
+        let expression = /^[A-Za-z]+$/;
+        if (expression.test(field) == true) {
+            return true;
+        } else {
+            alert('only letter are allowed in name');
+            return false;
+        }
     }
 }
 
