@@ -5,37 +5,54 @@
 }
 
 header {
-    margin: 1rem 6rem;
+    margin: 1rem 2rem;
+    padding: .5rem 5rem;
     display: flex;
+    /* background-color: rgba(6, 66, 170, 0.5); */
+    background: rgba( 1, 21, 142, 0.7);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur( 8px);
+    -webkit-backdrop-filter: blur( 8px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
     justify-content: space-between;
     align-items: center;
+    border-radius: 1rem;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0 0 10px gray;
+    z-index: 100;
+}
+
+header nav {
+    background: none;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
+    background: none;
 }
 
 header nav ul li {
     padding: 0 2rem;
     text-align: center;
     display: block;
+    background: none;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.3rem;
     transition: .3s;
     text-shadow: 1px 1px 2px gray;
-}
-
-header nav ul li a:hover {
-    color: #29a7d9;
+    background: none;
 }
 
 header #logo {
     height: 3.5rem;
+    background: none;
 }
 
 .btn {
@@ -45,22 +62,26 @@ header #logo {
     font-size: 1.1rem;
     background: none;
     transition: .3s;
-    background-color: white;
+    color: white;
+    border: none;
+    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, .9) 39%, rgba(0, 212, 255, .9) 100%);
     box-shadow: 3px 3px 10px gray;
+    /* background-image: linear-gradient(340deg, rgb(74, 5, 212) 11.2%, rgb(230, 46, 199) 91.2%); */
+    /* background-image: radial-gradient(circle at 10% 20%, rgba(37, 145, 251, 0.98) 0.1%, rgb(0, 7, 128) 99.8%); */
+    /* background-image: radial-gradient(602px at 2.1% 5.1%, rgb(233, 0, 120) 0%, rgb(0, 0, 0) 90.1%); */
 }
 
 .btn:hover {
-    background-color: #29a7d9;
     color: white;
-    border: 3px solid blue;
+    transform: scale(1.05);
 }
 
 #page {
     width: 70vw;
-    background-color: white;
+    background: linear-gradient(to right bottom, rgb(221, 231, 235), rgb(157, 157, 254));
     box-shadow: 0px 0px 15px gray;
     border-radius: 15px;
-    padding: 15px;
+    padding: 1.5rem;
     margin: 50px auto;
 }
 
@@ -83,18 +104,39 @@ header #logo {
 
 #page table {
     border-collapse: collapse;
-    font-size: 20px;
+    font-size: 17px;
     margin: 10px auto;
     width: 90%;
 }
 
-table th {
+#page table th {
     text-align: left;
-    background-color: #78b7d0;
+    padding: .5rem 1rem;
+    background-color: #196ae4;
 }
 
-table tr:nth-of-type(even) {
-    background-color: rgb(162, 232, 200);
+#page table td {
+    padding: .4rem 1rem;
+}
+
+#page table tr:nth-of-type(even) {
+    padding: .5rem 1rem;
+    background-color: rgb(3, 168, 74);
+}
+
+#syllabus-div table th {
+    text-align: left;
+    padding: .5rem 1rem;
+    background-color: #196ae4;
+}
+
+#syllabus-div table td {
+    padding: .4rem 1rem;
+}
+
+#syllabus-div table tr:nth-of-type(even) {
+    padding: .5rem 1rem;
+    background-color: rgb(3, 168, 74);
 }
 
 #page1 {
@@ -113,7 +155,7 @@ table tr:nth-of-type(even) {
 
 #syllabus-div {
     width: 70vw;
-    background-color: white;
+    background: linear-gradient(to right bottom, rgb(221, 231, 235), rgb(157, 157, 254));
     box-shadow: 0px 0px 15px gray;
     border-radius: 15px;
     padding: 15px;
@@ -130,8 +172,10 @@ table tr:nth-of-type(even) {
 }
 
 #tab {
-    background-color: rgb(167, 243, 243);
+    background-image: linear-gradient(165deg, rgb(22, 211, 107) 0%, rgb(3, 70, 39) 90%);
     box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 #tab h1 {
@@ -174,15 +218,17 @@ table tr:nth-of-type(even) {
 .tab-item .div-tab {
     height: 3rem;
     width: 13rem;
-    background-color: white;
+    /* background-color: white; */
+    background-image: linear-gradient(340deg, rgb(212, 5, 208) 11.2%, rgb(230, 74, 46) 91.2%);
     margin: 1.5rem 1rem;
     display: flex;
+    color: white;
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
     border: 1px solid black;
     transition: .4s;
-    box-shadow: 4px 4px 15px gray;
+    box-shadow: 4px 4px 15px rgb(50, 49, 49);
 }
 
 .tab-item .div-tab:hover {
@@ -207,16 +253,18 @@ table tr:nth-of-type(even) {
 .com-link1 .com-div1 {
     height: 3rem;
     width: 19rem;
-    background-color: white;
+    background-image: linear-gradient(165deg, rgba(37, 145, 251, 0.98) 0.1%, rgb(0, 7, 128) 99.8%);
     margin: 1.5rem 1.5rem;
     display: flex;
+    color: white;
+    text-align: center;
     align-items: center;
     justify-content: center;
     border-radius: .5rem;
     border: 1px solid black;
     transition: .4s;
-    box-shadow: 4px 4px 15px gray;
-    padding: 0 1rem;
+    box-shadow: 4px 4px 15px rgb(53, 53, 53);
+    padding: .5rem 1rem;
 }
 
 .com-link1 .com-div1:hover {
@@ -227,8 +275,125 @@ table tr:nth-of-type(even) {
     transform: scale(1.08);
 }
 
-#CapExp{
-    
+#CapExp {
     margin: 250px;
     height: 200px;
+}
+
+footer {
+    height: 45vh;
+    width: 100%;
+    margin-top: 8rem;
+    background-color: rgb(222, 221, 221);
+    border-top: 1px solid gray;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
+
+footer #info {
+    background: none;
+    width: 100%;
+}
+
+footer #info div {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+footer #info div h2 {
+    background: none;
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+footer #info div img {
+    background: none;
+    height: 4rem;
+}
+
+footer #info a {
+    background: none;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: black;
+    margin-left: 3rem;
+}
+
+footer #info p {
+    background: none;
+    margin: 2rem 0 0 3rem;
+}
+
+footer #links {
+    background: none;
+}
+
+footer #links table {
+    background: none;
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer th {
+    text-align: start;
+    width: 20%;
+    background: rgb(222, 221, 221);
+    font-size: .9rem;
+}
+
+footer a {
+    background: rgb(222, 221, 221);
+    text-decoration: none;
+    font-size: .8rem;
+    color: black;
+}
+
+footer td {
+    background: rgb(222, 221, 221);
+}
+
+footer #links #social {
+    background: none;
+    width: 100%;
+}
+
+footer #links #social div {
+    background: none;
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+}
+
+footer #links #social div .butn {
+    display: inline-block;
+    width: 7vh;
+    height: 7vh;
+    margin: 25px 15px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(3, 8, 97, 0.5);
+    /* color: #1a1a1a; */
+    color: white;
+    overflow: hidden;
+    position: relative;
+    transition: .4s;
+    background: linear-gradient(340deg, rgba(3, 4, 95, 1) 0%, rgba(30, 30, 201, 1) 39%, rgba(0, 212, 255, 1) 100%);
+}
+
+footer #links #social div .butn i {
+    line-height: 7vh;
+    font-size: 1.5rem;
+    background: none;
+    transition: .4s;
+}
+
+footer #links #social div .butn:hover {
+    transform: scale(1.15);
+    color: #f1f1f1;
+    box-shadow: 0px 0px 15px rgba(3, 8, 97, 0.5);
+    animation: round .4s linear;
 }
