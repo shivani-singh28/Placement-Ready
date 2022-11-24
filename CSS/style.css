@@ -225,4 +225,13 @@ table tr:nth-of-type(even) {
     border: 1px solid blue;
     box-shadow: 5px 5px 10px gray;
     transform: scale(1.08);
+<<<<<<< HEAD
+=======
+}
+
+#CapExp{
+    
+    margin: 250px;
+    height: 200px;
+>>>>>>> 797aade535b4d79ff4ae00d3de39f6d1e6787c68
 }

@@ -23,11 +23,11 @@
                 <li><a href="./main_InterviewExp.html#functionalities">Interview Experience</a></li>
             </ul>
         </nav>
-        <button class="btn">Login</button>
+        <button class="btn" id="logout-btn">Log out</button>
     </header>
     <main>
         <img src="../Images/icons/android-chrome-512x512.png" alt="">
-        <a href="#"><button class="btn">Begin Preparation</button></a>
+        <a href="#functionalities"><button class="btn">Begin Preparation</button></a>
     </main>
     <section>
         <div id="functionalities">
@@ -99,28 +99,22 @@
                 <div class="com-div">CoCubes</div>
             </a>
             <a href="#" class="com-link">
-                <div class="com-div">Hackerrank</div>
-            </a>
-            <a href="#" class="com-link">
                 <div class="com-div">Oracle</div>
             </a>
-            <a href="#" class="com-link">
-                <div class="com-div">Qualcomm</div>
+            <a href="./Zoho.html" class="com-link">
+                <div class="com-div">ZOHO</div>
             </a>
-            <a href="#" class="com-link">
-                <div class="com-div">VMware</div>
+            <a href="./HCL.html" class="com-link">
+                <div class="com-div">HCL</div>
             </a>
-            <a href="#" class="com-link">
-                <div class="com-div">Reliance Jio</div>
-            </a>
-            <a href="#" class="com-link">
-                <div class="com-div">Accenture</div>
-            </a>
-            <a href="#" class="com-link">
+            <a href="./MindTree.html" class="com-link">
                 <div class="com-div">Mindtree</div>
             </a>
-            <a href="#" class="com-link">
+            <a href="./TcsDigital.html" class="com-link">
                 <div class="com-div">TCS Digital</div>
+            </a>
+            <a href="./Accenture.html" class="com-link">
+                <div class="com-div">Accenture</div>
             </a>
         </aside>
     </section>
@@ -139,31 +133,31 @@
                     <th>Support</th>
                     <th>Companies</th>
                     <th></th>
-                    <th>Get In Touck</th>
+                    <th>Get In Touch</th>
                 </tr>
                 <tr>
-                    <td><a href="#">Conatct Us</a></td>
+                    <td><a href="./contactus.html" target="_blank">Conatct Us</a></td>
                     <td><a href="#">Accenture</a></td>
                     <td><a href="#">Microsoft</a></td>
-                    <td><a href="#">abc@gmail.com</a></td>
+                    <td><a href="#">lokesh.gla_cs20@gla.ac.in</a></td>
                 </tr>
                 <tr>
                     <td><a href="#">About Us</a></td>
                     <td><a href="#">Cognizant</a></td>
                     <td><a href="#">TCS</a></td>
-                    <td><a href="#">+91 0000000000</a></td>
+                    <td><a href="#">+91 8791937610</a></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">Infosys</a></td>
                     <td><a href="#">Mind Tree</a></td>
-                    <td><a href="#">Text on Us</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td><a href="#">VMware</a></td>
                     <td><a href="#">Oracle</a></td>
-                    <td><a href="#">Whatsapp/Instagram</a></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td></td>
@@ -186,15 +180,21 @@
             </table>
             <div id="social">
                 <div>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
-                    <a class="butn" href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.linkedin.com/in/lokeshsharma1703/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://github.com/Lokeshsharma1703" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.instagram.com/mr.tomar81/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://www.facebook.com/mr.tomar81" target="_blank"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+                    <a class="butn" href="https://twitter.com/T_o_m_a_r" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        var btn = document.getElementById('logout-btn');
+        btn.addEventListener('click', (e) => {
+            window.location.assign('../index.html');
+        })
+    </script>
 </body>
 
 </html>
