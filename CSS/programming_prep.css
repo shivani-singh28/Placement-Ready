@@ -1,7 +1,7 @@
 * {
-    padding: 0;
     margin: 0;
-    font-family: 'Poppins';
+    padding: 0;
+    font-family: "Poppins";
 }
 
 header {
@@ -76,208 +76,51 @@ header #logo {
     transform: scale(1.05);
 }
 
-#page {
-    width: 70vw;
-    background: linear-gradient(to right bottom, rgb(221, 231, 235), rgb(157, 157, 254));
-    box-shadow: 0px 0px 15px gray;
-    border-radius: 15px;
-    padding: 1.5rem;
-    margin: 50px auto;
+main {
+    width: 100vw;
+    background-image: url(../Images/Bckr_img.png);
+    background-position: center;
 }
 
-#page h2 {
-    font-size: 35px;
-    padding: 20px 0;
-    font-weight: bold;
-}
-
-#page p {
-    font-size: 18px;
-    padding: 10px 0;
-}
-
-#page h3 {
-    font-size: 25px;
-    padding: 10px 0;
-    margin-left: 3rem;
-}
-
-#page table {
-    border-collapse: collapse;
-    font-size: 17px;
-    margin: 10px auto;
-    width: 90%;
-}
-
-#page table th {
-    text-align: left;
-    padding: .5rem 1rem;
-    background-color: #196ae4;
-}
-
-#page table td {
-    padding: .4rem 1rem;
-}
-
-#page table tr:nth-of-type(even) {
-    padding: .5rem 1rem;
-    background-color: rgb(3, 168, 74);
-}
-
-#syllabus-div table th {
-    text-align: left;
-    padding: .5rem 1rem;
-    background-color: #196ae4;
-}
-
-#syllabus-div table td {
-    padding: .4rem 1rem;
-}
-
-#syllabus-div table tr:nth-of-type(even) {
-    padding: .5rem 1rem;
-    background-color: rgb(3, 168, 74);
-}
-
-#page1 {
-    width: 70vw;
-    background-color: white;
-    padding: 15px;
-    margin: 50px auto;
-}
-
-#page1 table {
-    border-collapse: collapse;
-    font-size: 20px;
-    margin: 10px auto;
-    width: 90%;
-}
-
-#syllabus-div {
-    width: 70vw;
-    background: linear-gradient(to right bottom, rgb(221, 231, 235), rgb(157, 157, 254));
-    box-shadow: 0px 0px 15px gray;
-    border-radius: 15px;
-    padding: 15px;
-    margin: 50px auto;
-    padding: 0 0 2rem 0;
-}
-
-#page li {
-    list-style: none;
-}
-
-#syllabus-div .l1content ul li a {
-    text-decoration: none;
-}
-
-#tab {
-    background-image: linear-gradient(to right bottom, skyblue, blue);
-    box-sizing: border-box;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-#tab h1 {
-    font-size: 35px;
-    padding: 20px 0;
-    font-weight: bold;
-    text-align: center;
-}
-
-#tab ul {
-    padding: 1rem 3rem;
-    list-style: none;
+main .sec {
+    width: 80%;
+    margin: 3rem auto;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px gray;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
 }
 
-#tab ul li .tab-item .div-tab {
-    margin: 10px 10px;
-    padding: 0 10px;
-    width: 17rem;
-}
-
-#syllabus-div h2 {
-    font-size: 35px;
-    padding: 20px 0;
-    font-weight: bold;
-}
-
-#syllabus-div h3 {
-    font-size: 25px;
-    padding: 10px 0;
-}
-
-.tab-item {
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
-}
-
-.tab-item .div-tab {
-    height: 3rem;
-    width: 13rem;
-    /* background-color: white; */
-    background-image: linear-gradient(340deg, rgb(212, 5, 208) 11.2%, rgb(230, 74, 46) 91.2%);
-    margin: 1.5rem 1rem;
+main .sec .head {
+    width: 100%;
+    height: 7rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
     display: flex;
-    color: white;
     align-items: center;
     justify-content: center;
-    border-radius: .5rem;
-    border: 1px solid black;
-    transition: .4s;
-    box-shadow: 4px 4px 15px rgb(50, 49, 49);
+    background: linear-gradient(to right bottom, skyblue, blue);
 }
 
-.tab-item .div-tab:hover {
-    background-color: #29a7d9;
+main .sec h2 {
+    font-size: 2.5rem;
+    margin: 1rem;
     color: white;
-    border: 1px solid blue;
-    box-shadow: 5px 5px 10px gray;
-    transform: scale(1.08);
 }
 
-.l1content {
-    margin: 20px;
-    padding: 0 2rem;
+main .sec p {
+    font-size: 1.2rem;
+    margin: 2rem;
 }
 
-.com-link1 {
-    text-decoration: none;
-    color: black;
-    font-size: 1.1rem;
-}
-
-.com-link1 .com-div1 {
-    height: 3rem;
-    width: 19rem;
-    background-image: linear-gradient(165deg, rgba(37, 145, 251, 0.98) 0.1%, rgb(0, 7, 128) 99.8%);
-    margin: 1.5rem 1.5rem;
-    display: flex;
-    color: white;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: .5rem;
-    border: 1px solid black;
-    transition: .4s;
-    box-shadow: 4px 4px 15px rgb(53, 53, 53);
-    padding: .5rem 1rem;
-}
-
-.com-link1 .com-div1:hover {
-    background-color: #29a7d9;
-    color: white;
-    border: 1px solid blue;
-    box-shadow: 5px 5px 10px gray;
-    transform: scale(1.08);
-}
-
-#CapExp {
-    margin: 250px;
-    height: 200px;
+main .sec iframe {
+    margin-top: 2rem;
+    width: 80%;
+    height: 80vh;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px black;
 }
 
 footer {
@@ -339,7 +182,7 @@ footer #links table {
     margin-top: 10px;
 }
 
-footer th {
+th {
     text-align: start;
     width: 20%;
     background: rgb(222, 221, 221);
@@ -353,7 +196,7 @@ footer a {
     color: black;
 }
 
-footer td {
+td {
     background: rgb(222, 221, 221);
 }
 
